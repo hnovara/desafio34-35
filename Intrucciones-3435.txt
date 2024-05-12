@@ -1,0 +1,37 @@
+Realizar todas las operaciones (CRUD completo) para la gestión de tareas en Node.js utilizando la librería Express y la base de datos MongoDB con Mongoose. La aplicación tendrá todas las rutas necearias para crear, leer, actualizar y eliminar una tarea La aplicación permitirá crear tareas con un título y una descripción, y obtener todas las tareas existentes en la base de datos con su título y descripción.
+
+Logica de negocio:
+
+La aplicación de gestión de tareas tendrá como objetivo permitir a los usuarios crear nuevas tareas y obtener una lista de todas las tareas existentes en la base de datos. Cada tarea tendrá un título y una descripción. Los datos de entrada serán el título y la descripción de la tarea a crear. Los datos de salida serán la tarea creada y la lista de todas las tareas existentes en la base de datos con su título y descripción.
+
+Requerimientos funcionales:
+
+* Crear tarea: Permite crear una tarea especificando su título y descripción.
+* Leer todas las tareas: Permite obtener una lista de todas las tareas registradas en la base de datos.
+* Leer una tarea: Permite obtener los detalles de una tarea específica a través de su ID.
+* Actualizar tarea: Permite actualizar los detalles de una tarea específica a través de su ID.
+* Eliminar tarea: Permite eliminar una tarea específica a través de su ID.
+
+Requerimientos no funcionales:
+
+* La aplicación debe estar escrita en Node.js utilizando la librería Express y la base de datos MongoDB con Mongoose.
+* La aplicación debe tener todas rutas necesarias para listar, crear, editar y eliminar las tareas existentes en la base de datos.
+* La aplicación debe ser capaz de manejar errores de manera adecuada.
+
+Pasos a realizar:
+
+1.Instalar las dependencias necesarias: Express, Mongoose
+2.Configurar la conexión a la base de datos MongoDB utilizando Mongoose.
+3.Definir un modelo de tarea utilizando Mongoose.
+4.Agregar las rutas de Express para CRUD de tareas
+	4.a.Crear una tarea
+	4.b.Leer todas las tareas
+	4.c.Leer una tarea
+	4.d.Actualizar una tarea
+	4.c.Eliminar una tarea
+5.En la ruta de creación de tarea, validar los datos de entrada y crear una nueva tarea en la base de datos utilizando el modelo definido.
+6.En la ruta de obtención de todas las tareas, obtener todas las tareas existentes en la base de datos utilizando el modelo definido.
+7.En la ruta de obtención de una tarea, obtener la tareas existente basado en el ID
+8.En la ruta de actualizar una tarea, validar los datos de entrada y editar la tarea en la base de datos utilizando el modelo definido.
+8.En la ruta de eliminar una tarea, obtener la tarea a eliminar y borrar de la base de datos la tarea encontrada.
+9.Manejar los errores de manera adecuada y devolver las respuestas correspondientes a cada solicitud.
